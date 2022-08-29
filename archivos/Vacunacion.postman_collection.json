@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "051eda10-563f-4e74-8a3c-b5814b88d1f4",
+		"name": "Vacunacion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11793167"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"And5re16e9529P521P\",\r\n    \"password\": \"7IojT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacunacion/empleados/login/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacunacion",
+						"empleados",
+						"login",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get empleados",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacunacion/empleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacunacion",
+						"empleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear empleado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cedula\": \"0107098201\",\r\n    \"nombres\": \"Andres\",\r\n    \"apellidos\": \"Perez\",\r\n    \"correo\": \"andrez.perez@gmail.com\",\r\n    \"fechaNacimiento\": \"1997-01-01\",\r\n    \"direccion\": \"Av Loja y Don Bosco 15-01\",\r\n    \"telefono\": \"0981234568\",\r\n    \"estaVacunado\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacunacion/empleados/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacunacion",
+						"empleados",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar empleado",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cedula\": \"0107098782\",\r\n    \"nombres\": \"Juan\",\r\n    \"apellidos\": \"Perez\",\r\n    \"correo\": \"juan.perez@gmail.com\",\r\n    \"fechaNacimiento\": \"1997-01-01T05:00:00.000+00:00\",\r\n    \"direccion\": \"Av Loja y Don Bosco\",\r\n    \"telefono\": \"4088569\",\r\n    \"estaVacunado\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacunacion/empleados/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacunacion",
+						"empleados",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar empleado",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cedula\": \"0107098287\",\r\n    \"nombres\": \"Juan\",\r\n    \"apellidos\": \"Perez\",\r\n    \"correo\": \"juan.perez@gmail.com\",\r\n    \"fecha_nacimiento\": \"2020-01-01\",\r\n    \"direccion\": \"Av Loja y Don Bosco 15-01\",\r\n    \"telefono\": \"0981234567\",\r\n    \"esta_vacunado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacunacion/empleados/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacunacion",
+						"empleados",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ingresar vacunas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fechaVacunacion\": \"2022-08-28\",\r\n    \"numeroDosis\": 1,\r\n    \"idVacuna\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacunacion/empleados/registrarVacunas/And5re16e9529P521P",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacunacion",
+						"empleados",
+						"registrarVacunas",
+						"And5re16e9529P521P"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get empleados By Estado vacunacion",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacunacion/empleados/estado/false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacunacion",
+						"empleados",
+						"estado",
+						"false"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get empleados By Tipo vacuna",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacunacion/empleados/tipovacuna/Sputnik",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacunacion",
+						"empleados",
+						"tipovacuna",
+						"Sputnik"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get empleados By Fecha",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/vacunacion/empleados/fechavacuna/2021-01-01/2021-01-30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vacunacion",
+						"empleados",
+						"fechavacuna",
+						"2021-01-01",
+						"2021-01-30"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
