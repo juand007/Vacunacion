@@ -4,6 +4,7 @@ Requiere:
 - Java 11
 - SpringBoot 2.7.3
 - Maven
+
 Base de datos:
 - Para facilidad de revisión el proyecto tiene acceso a una DB
 - El modelo de datos se puede visualizar en archivos/ModeloDeDatos.png
